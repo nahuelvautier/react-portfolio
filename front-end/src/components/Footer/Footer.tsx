@@ -18,7 +18,7 @@ export default function Footer () {
         <a href="https://github.com/nahuelvautier" target="_blank">GitHub</a>
       </div>
     </div>
-    <p className="copyright">2021 &copy; Nahuel Vautier.</p>
+    <p className="copyright">2023  &copy;  Nahuel Vautier</p>
   </footer>
   );
 }

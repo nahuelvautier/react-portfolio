@@ -37,8 +37,12 @@
   color: var(--main-color);
 }
 
-.nav-item {
-  padding : .6rem;
+/* .nav-container > * {
+  margin: 0 .5rem;
+} */
+
+.nav-container > *  {
+  margin: .6rem;
   display: flex;
   flex-flow: column nowrap;
   text-align: center;
@@ -51,7 +55,9 @@
 
 .nav-item:hover { color: var(--main-model-color); }
 
-.panel {
+.nav-item-active { color: var(--main-model-color); }
+
+/* .panel {
   position: absolute;
   z-index: 998;
   top: 0;
@@ -63,7 +69,7 @@
   background-color: rgba(0, 0, 0, .9);
   transition: transform .5s ease;
   transform: translate(0, -100%);
-}
+} */
 
 .panel.is-active {
   transform: translate(0, 0);
@@ -109,5 +115,5 @@
     flex-flow: row nowrap;
   }
 
-  .nav-item { padding: 0 1.5rem; }
+  .nav-container > * { padding: 0 1.5rem; }
 }
