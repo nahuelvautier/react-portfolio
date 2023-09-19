@@ -1,0 +1,29 @@
+.index-porter {
+  height: 100vh;
+  width: 100%;
+  max-width: var(--container-width);
+  background-image: url(./src/assets/light-cover.jpg); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.index-porter div {
+  padding: 0 1rem;
+  height: inherit;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: rgba(0, 0, 0, .65);
+  color: #fff;
+}
+
+.index-porter h2 { text-indent: -5%; }
+
+@media screen and (min-width: 1024px) {
+  .index-porter { height: 85vh; }
+
+  .index-porter h2 { text-indent: -7rem; }
+}
+

@@ -1,0 +1,31 @@
+.footer-container {
+  padding: 4rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+  max-width: var(--container-width);
+  background-color: #222;
+}
+
+.footer-container p {
+  font-size: 130%;
+  text-align: center;
+  color: #ddd;
+}
+
+.social {
+  padding: 2rem;
+  width: 20%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+.instagram, .linkedin, .github {
+  padding: .3rem;
+  display: flex;
+  flex-flow: column nowrap;
+  align-items: center;
+}
+
+.copyright { white-space: nowrap; }

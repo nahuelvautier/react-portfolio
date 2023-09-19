@@ -1,0 +1,109 @@
+:root {
+  --main-font: sans-serif;
+  --font-size: 16px;
+  --main-color: #6796a8;
+  --main-model-color: #8fbed0;
+  --container-width: 1920px;
+  --dark-mode-title: #ffa;
+  --dark-mode-hover: #ff7;
+}
+
+html {
+  box-sizing: border-box;
+  font-family: var(--main-font);
+  font-size: var(--font-size);
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+  margin: 0;
+  padding: 0;
+}
+
+::selection { background-color: var(--main-color); }
+a::selection { color: #eee; }
+
+body {
+  margin: auto;
+  max-width: var(--container-width);
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  color: var(--main-color);
+  text-decoration: none;
+  transition: color .3s ease;
+}
+
+a:hover { color: var(--main-model-color); }
+
+hr {
+  margin: 1.5rem auto 1.5rem;
+  width: 80%;
+  height: 3px;
+  background-color: var(--main-color);
+}
+
+article { padding: 2rem; }
+
+h4, h3, h2, h1 {
+  font-size: 220%;
+  opacity: .7;
+}
+
+h4 { font-size: 180%; }
+
+h3 { font-size: 195%; }
+
+h2 { font-size: 205%; }
+
+h2 > span {
+  padding: 1rem;
+  display: block;
+  font-size: 95%;
+  text-indent: 1rem;
+}
+
+p {
+  padding: 2rem;
+  font-size: 150%;
+  font-weight: bold;
+  text-align: center;
+  opacity: .8;
+}
+
+ul { padding: 1rem; }
+
+li { font-size: 140%;  }
+
+
+/* Dinamic classes */
+.none { display: none; }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+}
+
+
+/* Icons */
+.fab {
+  padding-bottom: .3rem;
+  color: #ddd;
+}
+
+.fa-whatsapp {
+  padding: 0;
+  color: #25D366;
+}
