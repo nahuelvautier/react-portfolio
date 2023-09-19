@@ -1,0 +1,110 @@
+.contact-porter h3 {
+  margin-top: 1rem;
+  text-align: center;
+}
+
+.contact-form {
+  --form-ok-color: #4caf50;
+  --form-error-color: #f44336;
+  margin-left: auto;
+  margin-right: auto;
+  width: 80%;
+}
+
+.contact-form > * {
+  padding: .5rem;
+  margin: 1rem auto;
+  display: block;
+  width: 100%;
+}
+
+.contact-form textarea { resize: none; }
+
+.contact-form legend,
+.contact-form-response {
+  padding-top: 2rem;
+  font-size: 130%;
+  font-weight: bold;
+  text-align: center;
+  opacity: .75;
+}
+
+.contact-form input,
+.contact-form textarea {
+  font-size: 1rem;
+  font-family: sans-serif;
+}
+
+.contact-form input[type="submit"] {
+  width: 40%;
+  font-size: 60%;
+  font-weight: bold;
+  border: none;
+  border-radius: 2px;
+  cursor: pointer;
+  color: #eee;
+  background-color: #5ba0a4;
+  box-shadow:  0 .3rem .3rem #3b898e, 0 .6rem .5rem rgba(0, 0, 0, .75);
+}
+
+.contact-form input[type="submit"]:active { transform: translate(0, .3rem); }
+
+.contact-form-loader {
+  margin: auto;
+  display: block;
+  max-width: 2rem;
+}
+
+.contact-form-response {
+  padding: 0;
+  display: block;
+  position: relative;
+  top: -4rem;
+  display: flex;
+  justify-content: center;
+}
+
+.contact-form *::placeholder {
+  font-size: 85%;
+  color: #111;
+}
+
+.contact-form [required]:valid { border: thin solid var(--form-ok-color); }
+
+.contact-form [required]:invalid { border: thin solid var(--main-color); }
+
+.contact-form-error {
+  margin-top: -1rem;
+  background-color: var(--form-error-color);
+  color: #fff;
+  transition: all .800ms ease;
+}
+
+.contact-form-error.is-active {
+  display: block;
+  animation: show-message 1s 1 normal 0s ease-out both;
+}
+
+@keyframes show-message {
+    0% {
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    100% {
+      visibility: visible;
+      opaity: 1;
+    }
+}
+
+@media screen and (min-width: 768px) {
+  .contact-form *::placeholder { font-size: 100%; }
+}
+
+@media screen and (min-width: 1024px) {
+  .contact-form { width: 70%; }
+
+  .contact-form input[type="submit"] { font-size: 80%; }
+
+  .contact-form-response { white-space: nowrap; }
+}

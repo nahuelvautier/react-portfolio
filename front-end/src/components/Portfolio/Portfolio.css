@@ -1,0 +1,48 @@
+.portfolio-header {
+  margin: 5rem auto;
+  display: block;
+  text-align: center;
+}
+
+.portfolio-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: .5rem;
+  text-align: center;
+}
+
+
+.portfolio-h3-project {
+  margin: 5rem 0 1rem 1rem;
+  font-size: 190%;
+}
+
+.portfolio-container h4 { margin: 1.5rem auto; }
+
+.portfolio-container iframe { height: 25rem; }
+
+.portfolio-container hr {
+  margin: .5rem auto;
+  margin-top: 1.5rem;
+  width: 40%; 
+}
+
+.code-frame-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.code-frame-container > * {
+  margin: .3rem auto;
+}
+
+.portfolio-container .fa-github { color: var(--main-color); }
+
+@media screen and (min-width: 768px) {
+  .portfolio-container hr { width: 50%; }
+}
+
+@media screen and (min-width: 1024px) {
+  .portfolio-container hr { width: 80%; }
+}

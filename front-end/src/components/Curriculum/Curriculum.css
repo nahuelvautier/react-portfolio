@@ -1,0 +1,38 @@
+.cv-porter h3 {
+  margin-top: 3rem;
+}
+
+.cv-pdf {
+  margin-top: 3.5rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.cv-content h4 {
+  padding-bottom: 1.5rem;
+  text-align: center;
+}
+
+.cv-list li {
+  padding: .5rem 0;
+  opacity: .8;
+}
+
+.cv-list a { white-space: nowrap; }
+
+.technologies {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-evenly;
+}
+
+.technologies img {
+  margin: .5rem;
+  width: 100%;
+}
+
+@media screen and (min-width: 768px) {
+  .technologies img { width: 18%; }
+
+  .cv-porter h3 { text-indent: 20%; }
+}
