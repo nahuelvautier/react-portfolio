@@ -1,0 +1,24 @@
+.scroll-btn {
+  position: fixed;
+  z-index: 999;
+  bottom: calc(15vh);
+  right: 5vw;
+  width: 4rem;
+  height: 4rem;
+  border-radius: 50%;
+  font-size: 2rem;
+  background-color: rgb(80, 120, 136);
+  color: #eee;
+  cursor: pointer;
+  outline: 0;
+  border: 0;
+  box-shadow: 0 .3rem .3rem rgba(0, 0, 0, .75);
+  transition: all 0.3s ease-out;
+}
+
+.scroll-btn:hover {
+  background-color: rgb(97, 143, 163);
+  color: #444;
+}
+
+.scroll-btn:active { transform: translate(0, .8rem); }

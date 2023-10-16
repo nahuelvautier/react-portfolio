@@ -11,9 +11,9 @@ export default function Header () {
       </figure>
       <div id="panel" className="panel">
         <nav className="nav-container">
-          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : null } to="/portfolio">Portfolio</NavLink>
-          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : null } to="/curriculum-vitae">Curriculum Vitae</NavLink>
-          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : null } to="/contact">Contact</NavLink>
+          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/portfolio">Portfolio</NavLink>
+          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/curriculum-vitae">Curriculum Vitae</NavLink>
+          <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/contact">Contact</NavLink>
           <div className="nav-item"><span className="dark-theme-btn"><i className="fas fa-toggle-off"> </i></span></div>
         </nav>
       </div>

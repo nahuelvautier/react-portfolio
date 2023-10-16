@@ -7,6 +7,7 @@ import Footer from './components/Footer/Footer';
 import Portfolio from './components/Portfolio/Portfolio';
 import Curriculum from './components/Curriculum/Curriculum';
 import Contact from './components/Contact-Form/Contact';
+import ScrollTopButton from './components/Scroll-Top-Button/Scroll-Top-Button';
 
 function App() {
 
@@ -20,8 +21,9 @@ function App() {
           <Route path='/curriculum-Vitae' element={<Curriculum />} />
           <Route path='/contact' element={<Contact />} />
         </Routes>
-      </BrowserRouter>
       <Footer />
+      </BrowserRouter>
+      <ScrollTopButton />
     </>
   )
 }

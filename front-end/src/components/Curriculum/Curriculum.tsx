@@ -4,14 +4,13 @@ export default function Curriculum () {
   return (
     <>
       <section className="cv-porter">
-      <article>
-        <div>
-          <h2>Nahuel Vautier</h2>
-          <h3>Programador / Desarrollador web</h3>
-        </div>
-        <div className="cv-pdf"><a href="assets/Curriculum-Vitae.pdf" target="_blank"></a></div>
-      </article>
-    </section>
+        <article>
+          <div>
+            <h3>Programador / Desarrollador web</h3>
+          </div>
+          <div className="cv-pdf"><a href="assets/Curriculum-Vitae.pdf" target="_blank"></a></div>
+        </article>
+      </section>
 
       <section className="cv-content">
         <article>

@@ -1,9 +1,10 @@
+import { Link } from 'react-router-dom';
 import './Footer.css';
 
 export default function Footer () {
   return (
     <footer className="footer-container">
-    <p>Para comunicarte conmigo solo <a href="contact.html">clic aquí!</a></p>
+    <p>Para comunicarte conmigo solo <Link to="contact">clic aquí!</Link></p>
     <div className="social">
       <div className="instagram">
         <i className="fab fa-instagram"></i>
