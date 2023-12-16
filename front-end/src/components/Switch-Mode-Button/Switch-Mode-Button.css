@@ -1,0 +1,57 @@
+.status-switch-label {
+  padding: 0 0.5px;
+  height: .875rem;
+  width: 1.675rem;
+  display: inline-block;
+  position: relative;
+  top: .15rem;
+  border: thin solid var(--main-color);
+  border-radius: 2.125rem;
+  background-color: var(--main-color);
+  cursor: pointer;
+}
+
+.status-switch-label input {
+  display: none;
+}
+
+.status-switch-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  transition: 500ms;
+}
+
+.status-switch-slider:before {
+  height: 0.75rem;
+  width: 0.75rem;
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 1px;
+  bottom: 1px;
+  border: thin solid var(--main-color);
+  background-color: #FFF;
+  transition: 500ms;
+  border-radius: 3.125rem;
+}
+
+.status-switch-label input[type=checkbox]:checked + .status-switch-slider:before {
+  transform: translateX(.625rem);
+}
+
+
+/* Dark Mode */
+.dark-mode .status-switch-label {
+  border-color: #cca;
+  background-color: #00000000;
+}
+
+.dark-mode .status-switch-label input[type=checkbox]:checked + .status-switch-slider:before {
+  top: .5px;
+  height: 0.65rem;
+  width: 0.65rem;
+  border: none;
+  background-color:  #cca;
+}

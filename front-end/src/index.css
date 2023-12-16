@@ -107,3 +107,122 @@ li { font-size: 140%;  }
   padding: 0;
   color: #25D366;
 }
+
+
+/* Dark - Mode */
+/* Reset */
+.dark-mode ::selection { background-color: var(--dark-mode-hover); }
+
+.dark-mode h1::selection { color: #bb6 }
+.dark-mode span::selection { color: #bb6 }
+.dark-mode h2::selection { color: #bb6 }
+.dark-mode h3::selection { color: #bb6 }
+.dark-mode h4::selection { color: #bb6 }
+.dark-mode legend::selection { color: #bb6 }
+
+.dark-mode a::selection { color: #444; }
+
+.dark-mode .fa-whatsapp { color: #25D366; }
+
+.dark-mode { background-color: #222; }
+
+.dark-mode a { color: #ee9; }
+
+.dark-mode a:hover { color: var(--dark-mode-hover); }
+
+/* Header */
+.dark-mode figcaption a { color: #cca; }
+
+.dark-mode figcaption a:hover { color: var(--dark-mode-hover); }
+
+.dark-mode .nav-item { color: #cca; }
+
+.dark-mode .nav-item:hover { color: var(--dark-mode-hover); }
+
+.dark-mode i { color: #ddb; }
+
+.dark-mode .fas:hover { color: var(--dark-mode-hover); }
+
+.dark-mode .panel { background-color: rgba(0, 0, 0, .5); }
+
+.dark-mode .panel-btn { background-color: #cc7; }
+
+.dark-mode .panel-btn:hover { background-color: var(--dark-mode-hover); }
+
+
+/*Dark - Mode*/
+/* Main */
+.dark-mode .index-porter h1 { color: var(--dark-mode-title); }
+
+.dark-mode .index-porter h2 { color: var(--dark-mode-title); }
+
+.dark-mode p { color: #bb6; }
+
+.dark-mode hr { background-color: #dd7; }
+
+.dark-mode .index-porter {
+  width: 100%;
+  max-width: var(--container-width);
+  background-image: url(./assets/dark-cover.jpg); 
+  background-size:  cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.dark-mode .index-porter div {
+  background-color: rgba(0, 0, 0, .45);
+}
+
+
+/* Dark - Mode */
+/* Portfolio */
+.dark-mode .portfolio-container .fa-github { color: #ddb; }
+
+
+/*Dark - Mode */
+/* Curriculum - Vitae */
+.dark-mode .cv-porter h2 { color: var(--dark-mode-title); }
+
+.dark-mode .cv-porter h3 { color: var(--dark-mode-title); }
+
+.dark-mode .cv-porter h2 { color: var(--dark-mode-title); }
+
+.dark-mode .cv-content h4 { color: var(--dark-mode-title); }
+
+.dark-mode .cv-content li { color: #dd9; }
+
+
+/*Dark - Mode*/
+/* Contact*/
+.dark-mode h3 { color: var(--dark-mode-title); }
+
+.dark-mode legend { color: var(--dark-mode-title); }
+
+.dark-mode .contact-form input[type="submit"] {
+  color: #111;
+  background-color: #cc6;
+  box-shadow:  0 .2rem .3rem #aa4, 0 .5rem .5rem #aaa;
+}
+
+.dark-mode .contact-form input[type="submit"]:hover { color: #fff; }
+
+.dark-mode .contact-form [required]:invalid { border: none; }
+
+.dark-mode .contact-form-response { color:  #dda; }
+
+
+/* Dark - Mode */
+/* Footer */
+.dark-mode footer { background-color: #111; }
+
+.dark-mode footer > p { color: #887; }
+
+.dark-mode button.scroll-btn {
+  background-color: #cc7;
+  color: #222;
+}
+
+.dark-mode button.scroll-btn:hover {
+  background-color: #dd7;
+  color: #fff;
+}

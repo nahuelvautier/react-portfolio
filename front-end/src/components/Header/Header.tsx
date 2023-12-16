@@ -1,10 +1,11 @@
 import './Header.css';
 import MenuButton from '../Menu-Button/Menu-Button';
 import { Link, NavLink } from 'react-router-dom';
+import SwitchModeButton from '../Switch-Mode-Button/Switch-Mode-Button';
 
 export default function Header () {
   return (
-    <header className="header-container" data-dark>
+    <header className="header-container">
       <figure className="logo-container">
         <Link to=""><img src="./src/assets/N.png" loading="lazy" alt="Nahuel Vautier" /></Link>
         <figcaption><Link to="">Nahuel Vautier</Link></figcaption>
@@ -14,7 +15,7 @@ export default function Header () {
           <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/portfolio">Portfolio</NavLink>
           <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/curriculum-vitae">Curriculum Vitae</NavLink>
           <NavLink className={ ({ isActive })=> isActive ? "nav-item-active" : undefined } to="/contact">Contact</NavLink>
-          <div className="nav-item"><span className="dark-theme-btn"><i className="fas fa-toggle-off"> </i></span></div>
+          <SwitchModeButton />
         </nav>
       </div>
       <MenuButton />
