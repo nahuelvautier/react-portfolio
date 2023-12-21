@@ -18,7 +18,7 @@ export default function Curriculum () {
           <ul className="cv-list">
             <li>Nombre: Nahuel Jair Vautier</li>
             <li>Teléfono: 
-              <a href="https://wa.link/ttqmdw" target="_blank"> <i className="fab fa-whatsapp"></i> +54 115732-7827</a>
+              <a href="https://wa.link/ttqmdw" target="_blank"> <i className="fab fa-whatsapp"></i> +5491157327827</a>
             </li>
             <li>Email: nahuel.vautier@gmail.com</li>
           </ul>

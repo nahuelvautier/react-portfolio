@@ -31,7 +31,6 @@
   top: 0;
   left: 1px;
   bottom: 1px;
-  border: thin solid var(--main-color);
   background-color: #FFF;
   transition: 500ms;
   border-radius: 3.125rem;
@@ -49,9 +48,6 @@
 }
 
 .dark-mode .status-switch-label input[type=checkbox]:checked + .status-switch-slider:before {
-  top: .5px;
-  height: 0.65rem;
-  width: 0.65rem;
-  border: none;
   background-color:  #cca;
+  transform: translateX(.675rem);
 }

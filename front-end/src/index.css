@@ -113,11 +113,11 @@ li { font-size: 140%;  }
 /* Reset */
 .dark-mode ::selection { background-color: var(--dark-mode-hover); }
 
-.dark-mode h1::selection { color: #bb6 }
-.dark-mode span::selection { color: #bb6 }
-.dark-mode h2::selection { color: #bb6 }
-.dark-mode h3::selection { color: #bb6 }
-.dark-mode h4::selection { color: #bb6 }
+.dark-mode h1::selection, 
+.dark-mode span::selection, 
+.dark-mode h2::selection, 
+.dark-mode h3::selection, 
+.dark-mode h4::selection, 
 .dark-mode legend::selection { color: #bb6 }
 
 .dark-mode a::selection { color: #444; }
@@ -131,6 +131,8 @@ li { font-size: 140%;  }
 .dark-mode a:hover { color: var(--dark-mode-hover); }
 
 /* Header */
+.dark-mode .header-container { background-color: #222 }
+
 .dark-mode figcaption a { color: #cca; }
 
 .dark-mode figcaption a:hover { color: var(--dark-mode-hover); }
@@ -150,10 +152,9 @@ li { font-size: 140%;  }
 .dark-mode .panel-btn:hover { background-color: var(--dark-mode-hover); }
 
 
-/*Dark - Mode*/
+/* Dark - Mode */
 /* Main */
-.dark-mode .index-porter h1 { color: var(--dark-mode-title); }
-
+.dark-mode .index-porter h1,
 .dark-mode .index-porter h2 { color: var(--dark-mode-title); }
 
 .dark-mode p { color: #bb6; }
@@ -179,20 +180,17 @@ li { font-size: 140%;  }
 .dark-mode .portfolio-container .fa-github { color: #ddb; }
 
 
-/*Dark - Mode */
+/* Dark - Mode */
 /* Curriculum - Vitae */
-.dark-mode .cv-porter h2 { color: var(--dark-mode-title); }
-
-.dark-mode .cv-porter h3 { color: var(--dark-mode-title); }
-
-.dark-mode .cv-porter h2 { color: var(--dark-mode-title); }
-
+.dark-mode .cv-porter h2,
+.dark-mode .cv-porter h3,
+.dark-mode .cv-porter h2,
 .dark-mode .cv-content h4 { color: var(--dark-mode-title); }
 
 .dark-mode .cv-content li { color: #dd9; }
 
 
-/*Dark - Mode*/
+/* Dark - Mode */
 /* Contact*/
 .dark-mode h3 { color: var(--dark-mode-title); }
 
@@ -201,7 +199,7 @@ li { font-size: 140%;  }
 .dark-mode .contact-form input[type="submit"] {
   color: #111;
   background-color: #cc6;
-  box-shadow:  0 .2rem .3rem #aa4, 0 .5rem .5rem #aaa;
+  box-shadow:  0 .2rem .3rem #aa4, 0 .5rem .5rem #000;
 }
 
 .dark-mode .contact-form input[type="submit"]:hover { color: #fff; }
@@ -225,4 +223,49 @@ li { font-size: 140%;  }
 .dark-mode button.scroll-btn:hover {
   background-color: #dd7;
   color: #fff;
+}
+
+
+
+/* Media Queries */
+@media screen and (min-width: 768px) {
+  h4, h3, h2, h1 {
+    font-size: 350%;
+    opacity: .7;
+  }
+
+  h4 { font-size: 200%; }
+
+  h3 { font-size: 230%; }
+
+  h2 { font-size: 280%; }
+
+  h2 > span {
+    padding: 1.5rem;
+    display: block;
+    font-size: 90%;
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  h4, h3, h2, h1 {
+    font-size: 400%;
+    opacity: .7;
+  }
+
+  h4 { font-size: 240%; }
+
+  h3 { font-size: 250%; }
+
+  h2 { font-size: 380%; }
+
+  h2 > span {
+    padding: 2rem;
+    display: block;
+    font-size: 65%;
+  }
+
+  h1 { text-indent: 15rem; }
+
+  p { font-size: 150%; }
 }

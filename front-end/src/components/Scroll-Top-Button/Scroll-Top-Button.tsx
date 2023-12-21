@@ -27,7 +27,6 @@ export default function ScrollTopButton () {
   return (
     <button
       className="scroll-btn  hidden"
-      data-dark
       onClick={scrollHandler}
     >
       &#11014;
