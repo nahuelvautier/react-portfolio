@@ -43,11 +43,10 @@
 
 /* Dark Mode */
 .dark-mode .status-switch-label {
-  border-color: #cca;
-  background-color: #00000000;
+  background-color:  #cca;
 }
 
 .dark-mode .status-switch-label input[type=checkbox]:checked + .status-switch-slider:before {
-  background-color:  #cca;
+  background-color:  #000;
   transform: translateX(.675rem);
 }

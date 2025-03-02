@@ -17,17 +17,22 @@ export default function SwitchModeButton () {
 
   const switchHandler = (event: any): void => { 
     // eslint-disable-next-line @typescript-eslint/no-unsafe-call, @typescript-eslint/no-unsafe-member-access
-    event.target.checked ? darkMode() :  lightMode()
+    event.target.checked ? darkMode() : lightMode()
   };
-  
-  /* if (ls.getItem("theme") === null) ls.setItem("theme", "light");
+
+  if (ls.getItem("theme") === null) ls.setItem("theme", "light");
   if (ls.getItem("theme") === "light") lightMode();
-  if (ls.getItem("theme") === "dark") darkMode(); */
-  
+  if (ls.getItem("theme") === "dark") {
+    setTimeout(() => {
+      document.getElementById("theme-toggle")!.checked = true
+    }, 0);
+    darkMode();
+  } 
+
   return (
     <div className="status-switch-container">
       <label htmlFor="theme-toggle" className="status-switch-label">
-        <input id="theme-toggle" type="checkbox" onChange={switchHandler}/>
+        <input id="theme-toggle" type="checkbox" onChange={switchHandler} />
         <span className="status-switch-slider"></span>
       </label>
     </div>
