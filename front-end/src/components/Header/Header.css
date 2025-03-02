@@ -89,6 +89,7 @@
   }
 
   .logo-container {
+    height: 7rem;
     position: relative;
     left: 1rem;
     display: inline-flex;
@@ -111,7 +112,9 @@
   }
 
   .logo-container > div {
-    margin-left: .5rem;
+    position: relative;
+    top: calc(2.55rem);
+    left: calc(-11.75rem);
   }
 
   .panel {

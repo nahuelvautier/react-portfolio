@@ -10,7 +10,6 @@ import Contact from './components/Contact-Form/Contact';
 import ScrollTopButton from './components/Scroll-Top-Button/Scroll-Top-Button';
 
 function App() {
-
   return (
     <>
       <BrowserRouter>

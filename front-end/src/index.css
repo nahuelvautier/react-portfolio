@@ -139,6 +139,8 @@ li { font-size: 140%;  }
 
 .dark-mode .nav-item { color: #cca; }
 
+.dark-mode .nav-item-active { color: var(--dark-mode-hover); }
+
 .dark-mode .nav-item:hover { color: var(--dark-mode-hover); }
 
 .dark-mode i { color: #ddb; }
